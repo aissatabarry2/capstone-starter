@@ -8,14 +8,14 @@ WRITE = ("kubectl rollout restart",)
 
 def audit(cmd: str, approved: bool) -> None:
     with open("audit.log", "a") as f:
-        f.write("%s | %s | approved=%s\n" % (time.strftime("%Y-%m-%d %H:%M:%S"), cmd, approved))
+        f.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} | {cmd} | approved={approved}\n")
 
 
 def run_tool(cmd: str, approved: bool = False) -> str:
     if not (cmd.startswith(READ) or (cmd.startswith(WRITE) and approved)):
         raise PermissionError("refuse : liste autorisee ou approbation")
     audit(cmd, approved)
-    return subprocess.run(cmd.split(), capture_output=True, text=True).stdout
+    return subprocess.run(cmd.split(), check=False, capture_output=True, text=True).stdout
 
 
 if __name__ == "__main__":
