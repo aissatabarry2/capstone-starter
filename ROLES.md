@@ -7,10 +7,10 @@ Semaine : S1 (culture DevOps)
 
 | Rôle | Responsable | Mission principale |
 |---|---|---|
-| Product Owner / Scrum Master | Prénom NOM | Tient le backlog Notion à jour, fixe les priorités, anime le point d'équipe, la revue et la rétrospective de sprint |
-| Développeur backend | Prénom NOM | Développe et maintient l'API FastAPI (routes, logique métier, tests unitaires) |
-| Ingénieur DevOps / CI-CD | Prénom NOM | Gère le dépôt, la CI GitHub Actions, l'environnement reproductible (Codespaces / Docker) et la gestion des secrets |
-| Qualité et documentation | Prénom NOM | Relit les pull requests, vérifie les tests et le lint, tient à jour le README et la documentation |
+| Product Owner / Scrum Master | Aissata | Tient le backlog Notion à jour, fixe les priorités, anime le point d'équipe, la revue et la rétrospective de sprint |
+| Développeur backend | Fatoumata | Développe et maintient l'API FastAPI (routes, logique métier, tests unitaires) |
+| Ingénieur DevOps / CI-CD | Barry | Gère le dépôt, la CI GitHub Actions, l'environnement reproductible (Codespaces / Docker) et la gestion des secrets |
+| Qualité et documentation | Sall | Relit les pull requests, vérifie les tests et le lint, tient à jour le README et la documentation |
 
 ## Definition of Done
 
