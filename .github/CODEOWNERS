@@ -1,2 +1,4 @@
 /app/ @ORG/dev-lead
 /k8s/ @ORG/ops-lead
+/infra/ @aissatabarry2
+/.github/ @aissatabarry2
