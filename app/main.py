@@ -3,7 +3,8 @@ import time
 from fastapi import FastAPI, HTTPException, Request
 from prometheus_client import Counter, Histogram, make_asgi_app
 
-app = FastAPI(title="capstone-api" , version="0.1.0")
+app = FastAPI(title="capstone-api" , version="0.1.0", description="API du fil rouge DevOps")
+
 REQS = Counter("http_requests_total", "Requetes HTTP", ["method", "path", "status"])
 LAT = Histogram("http_request_duration_seconds", "Latence HTTP", ["path"])
 
